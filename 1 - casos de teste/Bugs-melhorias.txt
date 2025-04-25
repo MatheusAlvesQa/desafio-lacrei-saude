@@ -1,0 +1,39 @@
+#Bugs encontrados durante a criação e execução dos casos de testes
+
+Bug 1 - Tela cadastro
+Título do bug: Falta de mensagem de erro adequada no cadastro
+Descrição: Ao tentar cadastrar um e-mail previamente já cadastrado a mensagem de erro do sistema é apenas um 'J' em vermelho, sem informar claramente que o e-mail já está em uso.
+Impacto: Médio
+Impacto para o cliente: Essa falta de feedback pode gerar frustração e perder a credibilidade no sistema, gerando desinteresse do cliente se cadastrar.
+
+Bug 2 - Tela pós-cadastro
+Título do bug: Erro de fluxo no pós-cadastro
+Descrição: Após realizar o pós-cadastro se o usuário clicar no botão superior(logomarca) 'Lacrei saúde' ou no botão 'Buscar profissional'o usuário é redirecionado à tela anterior, tendo que efetuar o pós-cadastro novamente, mesmo ja tenho preenchido as informações e tendo a mensagem de confirmação no sistema.
+Impacto: Baixo
+Impacto para o cliente: Tendo que realizar o pós-cadastro novamente e sem entender se foi um erro cometido ou um erro do sistema. Pode causar desconfiança no sistema.
+
+Bug 3 - Tela inicial pós alterar senha
+Título do bug: Obrigatoriedade de preencher novamente o pós-cadastro
+Descrição: Após alterar a senha da conta e efeturar o login novamente, o sistema o obriga a realizar novamente o pós-cadastro.
+Impacto: Alto
+Impacto pro cliente: Sensação de ter suas informações perdidas por apenas ter mudado a senha. Pode causar desistencia de continuar utilizando o sistema.
+
+Bug 4 - Tela de alteração de dados
+Título do bug: Erro no campo da data de nascimento
+Descrição: ao tentar alterar dados do perfil o campo de data de nascimento fica totalmente em branco, sem reagir à cliques, sem nenhuma informação. A forma que encontrei de alterar é clicando no canto superior do campo, em algum botão invisível.
+Impacto: Alto
+Impacto pro cliente: Possivelmente uma grande quantidade de usuários não vão conseguir alterar suas informações por causa desse campo que é obrigatório, e se não houver certa insistencia em encontrar esse botão invisível deve gerar desistencia dealterar seus dados.
+
+#Possíveis melhorias encontradas
+
+Melhoria 1 - Primeiro Login
+Descrição: Após efetuar o primeiro login no sistema o pós-cadastro se torna obrigatório, não dando opção de sair do sistema para continuar depois.
+
+Melhoria 2 - Tela cadastro
+Descrição: O campo e-mail não tem um validador eficiente para verificar se o e-mail é válido ou não, por exemplo um email pode ser criado 'aa@issonaoexiste.com'
+
+Melhoria 3 - Tela de busca de profissionais
+Descrição: O usuário pode estar em dúvida de como deve procurar o profissional que precisa. Seria interessante adicionar um Select na barra de pesquisa.
+
+Melhoria4 - Tela de resultado(profissionais)
+Descrição: Quando clicamos em 'pesquisar' na tela principal sem nenhum texto adicionado é retornado todos os profissionais. Seria interessante o uso de filtros, para que o usuário encontre um profissional que seja de sua preferencia, Ex: Área de atuação, localidade, valores...
