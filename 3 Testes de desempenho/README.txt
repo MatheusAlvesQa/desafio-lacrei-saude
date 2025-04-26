@@ -15,7 +15,6 @@
     - De forma geral o teste de desempenho se mostrou positivo, com um desempenho acima do aceitável
     - O ponto negativo é o tempo de resposta de Largest Contentful Paint, deve ser otimizado para melhorar o desempenho geral
     - Não foi realizada a simulação de carga alta. Ao decorrer da navegação manual o sistema se manteve estável e flúido sem travamentos
-    
 
 #- 📊 Resultado do Desempenho(Desktop)
     - Desempenho Geral = 87 ⚠️
