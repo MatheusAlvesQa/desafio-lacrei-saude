@@ -1,8 +1,8 @@
 #O cenário de teste foi feito de forma manual escolhida a página de cadastro
-@mobile @internet
+@mobile @internet @GoogleSpeedInsights
 Feature: Cenário de teste de desempenho
     Analisar a página de cadastro do site Lacrei Saúde
-    Utilizando o site pagespeed
+    Utilizando a ferramenta GoogleSpeedInsights
     Receber uma analise detalhada da pagina quando mobile e como desktop
 
     Scenario: Analisar desempenho da tela cadastro
