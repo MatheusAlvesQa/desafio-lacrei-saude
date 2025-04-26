@@ -1,4 +1,4 @@
-#Bugs encontrados durante a criação e execução dos casos de testes
+#- Bugs encontrados durante a criação e execução dos casos de testes 🐛
 
 Bug 1 - Tela cadastro
 Título do bug: Falta de mensagem de erro adequada no cadastro
@@ -24,7 +24,7 @@ Descrição: ao tentar alterar dados do perfil o campo de data de nascimento fic
 Impacto: Alto
 Impacto pro cliente: Possivelmente uma grande quantidade de usuários não vão conseguir alterar suas informações por causa desse campo que é obrigatório, e se não houver certa insistencia em encontrar esse botão invisível deve gerar desistencia dealterar seus dados.
 
-#Possíveis melhorias encontradas
+#- Possíveis melhorias encontradas 🚀
 
 Melhoria 1 - Primeiro Login
 Descrição: Após efetuar o primeiro login no sistema o pós-cadastro se torna obrigatório, não dando opção de sair do sistema para continuar depois.
