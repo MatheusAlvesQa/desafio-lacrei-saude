@@ -2,7 +2,7 @@
 @mobile @internet
 Feature: Casos de teste para o fluxo Cadastro → Pós Cadastro → Buscar Profissional.
 
-    Scenario: Cadastro de usuário com sucesso
+    Scenario: Cadastro realizado com sucesso
         Given que o usuário está na tela principal do sistema
             And o usuário clica no botão "Criar conta"
         When o usuário está na tela "Crie sua conta na Lacrei Saúde"
@@ -15,7 +15,7 @@ Feature: Casos de teste para o fluxo Cadastro → Pós Cadastro → Buscar Profi
             And o usuário marca a caixa "Li e concordo com os termos"
             And o usuário marca a caixa "Tenho 18 anos ou mais"
             And o usuário clica no botão "Cadastrar"
-        Then o usuário é redirecionado para a proxima página "Estamos quase lá", onde pede para confirmar e-mail
+        Then o usuário deve ser redirecionado para a página "Estamos quase lá" solicitando confirmação de e-mail
 
     Scenario: Completar o pós-cadastro
         Given que o usuário confirmou o e-mail
