@@ -1,0 +1,22 @@
+{
+  "name": "7-automacao",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@badeball/cypress-configuration": "^6.1.1",
+    "@badeball/cypress-cucumber-preprocessor": "^22.0.1",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.2.4",
+    "@cypress/browserify-preprocessor": "^3.0.2",
+    "@cypress/webpack-preprocessor": "^6.0.4",
+    "cypress": "^14.3.2"
+  },
+  "dependencies": {
+    "@faker-js/faker": "^9.7.0"
+  }
+}
