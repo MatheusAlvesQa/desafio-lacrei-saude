@@ -18,12 +18,12 @@ When('o usuário preenche o formulário com os seguintes dados:', (dataTable) =>
     dados.confirmar_email = generatedEmail;
   }
 
-  if (dados.nome !== undefined) cy.get('input#first_name').clear().type(dados.nome);
-  if (dados.sobrenome !== undefined) cy.get('input#last_name').clear().type(dados.sobrenome);
-  if (dados.email !== undefined) cy.get('input#email').clear().type(dados.email);
-  if (dados.confirmar_email !== undefined) cy.get('input#email2').clear().type(dados.confirmar_email);
-  if (dados.senha !== undefined) cy.get('input#password1').clear().type(dados.senha);
-  if (dados.confirmar_senha !== undefined) cy.get('input#password2').clear().type(dados.confirmar_senha);
+  if (dados.nome) cy.get('input#first_name').clear().type(dados.nome);
+  if (dados.sobrenome) cy.get('input#last_name').clear().type(dados.sobrenome);
+  if (dados.email) cy.get('input#email').clear().type(dados.email);
+  if (dados.confirmar_email) cy.get('input#email2').clear().type(dados.confirmar_email);
+  if (dados.senha) cy.get('input#password1').clear().type(dados.senha);
+  if (dados.confirmar_senha) cy.get('input#password2').clear().type(dados.confirmar_senha);
 
   
   if (dados.termos === 'sim') {

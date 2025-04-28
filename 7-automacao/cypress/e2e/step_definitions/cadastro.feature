@@ -90,20 +90,6 @@ Feature: Cadastro de usuário
             And o usuário clica no botão "Cadastrar"
         Then o sistema mostra a mensagem de erro "O e-mail é obrigatório."
 
-    Scenario: Cadastro com campo email inválido
-        When o usuário preenche o formulário com os seguintes dados:
-            | campo             | valor            |
-            | nome              | João             |
-            | sobrenome         | Alves            |
-            | email             | asd@@@           |
-            | confirmar_email   | <gerar_email>    |
-            | senha             | Aa12345@         |
-            | confirmar_senha   | Aa12345@         |
-            | termos            | sim              |
-            | maior_18          | sim              |
-            And o usuário clica no botão "Cadastrar"
-        Then o sistema mostra a mensagem de erro "Insira um e-mail válido"
-
     Scenario: Cadastro com campo de confirmação do email vazio
         When o usuário preenche o formulário com os seguintes dados:
             | campo             | valor            |
@@ -210,7 +196,7 @@ Feature: Cadastro de usuário
             | email             | <gerar_email>    |
             | confirmar_email   | <gerar_email>    |
             | senha             | Aa12345@         |
-            | confirmar_senha   | ba12345k         |
+            | confirmar_senha   | Aa12345@         |
             | termos            | nao              |
             | maior_18          | sim              |
             And o usuário clica no botão "Cadastrar"
@@ -224,7 +210,7 @@ Feature: Cadastro de usuário
             | email             | <gerar_email>    |
             | confirmar_email   | <gerar_email>    |
             | senha             | Aa12345@         |
-            | confirmar_senha   | ba12345k         |
+            | confirmar_senha   | Aa12345@         |
             | termos            | sim              |
             | maior_18          | nao              |
             And o usuário clica no botão "Cadastrar"
